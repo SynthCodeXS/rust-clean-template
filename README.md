@@ -2,12 +2,12 @@
 
 {{project_description}}
 
-## Запуск
+##Start
 
-```bash
+```bash```
 cargo run
 
-## Релиз
+##Релиз
 
-```bash
+```bash```
 cargo build --release
