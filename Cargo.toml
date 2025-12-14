@@ -1,0 +1,22 @@
+[package]
+name = "{{project-name}}"
+version = "0.1.0"
+authors = ["{{author_name}}"]
+description = "{{project_description}}"
+edition = "2021"
+
+[dependencies]
+# Сюда можно добавить любимые либы, например:
+# anyhow = "1.0"
+# serde = { version = "1.0", features = ["derive"] }
+
+# Профиль для разработки (быстрая компиляция)
+[profile.dev]
+opt-level = 0
+
+# Профиль для релиза (максимальная скорость и маленький размер)
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true  # Удаляет отладочные символы, бинарник будет весить копейки

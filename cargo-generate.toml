@@ -1,0 +1,6 @@
+[template]
+cargo_generate_version = ">=0.17.0"
+
+[placeholders]
+project_description = { type = "string", prompt = "Описание проекта?" }
+author_name = { type = "string", prompt = "Твое имя (для автора)?" }
